@@ -37,7 +37,7 @@ contract TokenIOCurrencyAuthority is Ownable {
      * @notice Constructor method for CurrencyAuthority contract
      * @param _storageContract Address of TokenIOStorage contract
      */
-    constructor(address _storageContract) public {
+    function TokenIOCurrencyAuthority(address _storageContract) public {
         /**
          * @notice Set the storage contract for the interface
          * @dev This contract will be unable to use the storage constract until
