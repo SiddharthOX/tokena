@@ -1,4 +1,6 @@
-pragma solidity ^0.4.19;
+pragma solidity ^0.4.16;
+
+pragma experimental ABIEncoderV2;
 
 /*
 COPYRIGHT 2018 Token, Inc.
