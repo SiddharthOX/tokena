@@ -61,7 +61,7 @@ contract TokenIOStorage is Ownable {
     mapping(bytes32 => bool)       internal boolStorage;
     mapping(bytes32 => int256)     internal intStorage;
 
-    constructor() public {
+   function TokenIOStorage() public {
 				/// @notice owner is set to msg.sender by default
 				/// @dev consider removing in favor of setting ownership in inherited
 				/// contract
