@@ -42,7 +42,7 @@ contract TokenIOFX is Ownable {
 	* @notice Constructor method for ERC20 contract
 	* @param _storageContract Address of TokenIOStorage contract
 	*/
-	constructor(address _storageContract) public {
+	function TokenIOFX(address _storageContract) public {
 			/// @dev Set the storage contract for the interface
 			/// @dev NOTE: This contract will be unable to use the storage constract until
 			/// @dev contract address is authorized with the storage contract
