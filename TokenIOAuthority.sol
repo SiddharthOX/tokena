@@ -35,7 +35,7 @@ contract TokenIOAuthority is Ownable {
      * @notice Constructor method for Authority contract
      * @param _storageContract Ethereum Address of TokenIOStorage contract
      */
-    constructor(address _storageContract) public {
+    function TokenIOAuthority(address _storageContract) public {
         /*
          * @notice Set the storage contract for the interface
          * @dev This contract will be unable to use the storage constract until
