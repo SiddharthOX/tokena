@@ -1187,7 +1187,7 @@ contract Ownable {
    * @dev The Ownable constructor sets the original `owner` of the contract to the sender
    * account.
    */
-  constructor() public {
+  function Ownable() public {
     owner[msg.sender] = true;
   }
 
@@ -1236,7 +1236,7 @@ contract TokenIOAuthority is Ownable {
      * @notice Constructor method for Authority contract
      * @param _storageContract Ethereum Address of TokenIOStorage contract
      */
-    constructor(address _storageContract) public {
+    function TokenIOAuthority(address _storageContract) public {
         /*
          * @notice Set the storage contract for the interface
          * @dev This contract will be unable to use the storage constract until
@@ -1347,7 +1347,7 @@ contract TokenIOCurrencyAuthority is Ownable {
      * @notice Constructor method for CurrencyAuthority contract
      * @param _storageContract Address of TokenIOStorage contract
      */
-    constructor(address _storageContract) public {
+    function TokenIOCurrencyAuthority(address _storageContract) public {
         /**
          * @notice Set the storage contract for the interface
          * @dev This contract will be unable to use the storage constract until
@@ -1555,7 +1555,7 @@ contract TokenIOERC20 is Ownable {
     * @notice Constructor method for ERC20 contract
     * @param _storageContract     address of TokenIOStorage contract
     */
-    constructor(address _storageContract) public {
+   function TokenIOERC20(address _storageContract) public {
         //// @dev Set the storage contract for the interface
         //// @dev This contract will be unable to use the storage constract until
         //// @dev contract address is authorized with the storage contract
@@ -1772,7 +1772,7 @@ contract TokenIOFX is Ownable {
 	* @notice Constructor method for ERC20 contract
 	* @param _storageContract Address of TokenIOStorage contract
 	*/
-	constructor(address _storageContract) public {
+	function TokenIOFX(address _storageContract) public {
 			/// @dev Set the storage contract for the interface
 			/// @dev NOTE: This contract will be unable to use the storage constract until
 			/// @dev contract address is authorized with the storage contract
@@ -1832,7 +1832,7 @@ contract TokenIOFeeContract is Ownable {
 	* @notice Constructor method for ERC20 contract
 	* @param _storageContract     address of TokenIOStorage contract
 	*/
-	constructor(address _storageContract) public {
+	function TokenIOFeeContract(address _storageContract) public {
 			/// @dev Set the storage contract for the interface
 			/// @dev NOTE: This contract will be unable to use the storage constract until
 			/// @dev contract address is authorized with the storage contract
@@ -1930,7 +1930,7 @@ contract TokenIONameSpace is Ownable {
   	* @notice Constructor method for ERC20 contract
   	* @param _storageContract     address of TokenIOStorage contract
   	*/
-  	constructor(address _storageContract) public {
+  	function TokenIONameSpace(address _storageContract) public {
   			/// @dev Set the storage contract for the interface
   			/// @dev NOTE: This contract will be unable to use the storage constract until
   			/// @dev contract address is authorized with the storage contract
@@ -1973,7 +1973,7 @@ contract TokenIOStorage is Ownable {
     mapping(bytes32 => bool)       internal boolStorage;
     mapping(bytes32 => int256)     internal intStorage;
 
-    constructor() public {
+    function TokenIOStorage() public {
 				/// @notice owner is set to msg.sender by default
 				/// @dev consider removing in favor of setting ownership in inherited
 				/// contract
